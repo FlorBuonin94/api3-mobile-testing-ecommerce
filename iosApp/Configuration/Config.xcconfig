@@ -1,0 +1,7 @@
+TEAM_ID=
+
+PRODUCT_NAME=Products_ecommers
+PRODUCT_BUNDLE_IDENTIFIER=com.example.products_ecommers.Products_ecommers$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=1.0
