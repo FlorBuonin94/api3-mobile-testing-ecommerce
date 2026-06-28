@@ -8,8 +8,8 @@
 
 ---
 
-## Descripción del proyuecto
-Este repositorio contiene el desarrollo de una aplicación móvil nativa para Android construida con **Kotlin Miltiplataform**. El objetivo principal es dar solución a la feature requerida por el equipo de e-commerce: conectarse de forma eficiente a una API externa, recuperar el catálogo de productos en formato JSON y renderizar la información limpia y sencilla para el usuario final.
+## Descripción del proyecto
+Este repositorio contiene el desarrollo de una aplicación móvil nativa para Android construida con **Kotlin Multiplataform**. El objetivo principal es dar solución a la feature requerida por el equipo de e-commerce: conectarse de forma eficiente a una API externa, recuperar el catálogo de productos en formato JSON y renderizar la información limpia y sencilla para el usuario final.
 
 La aplicación implementa una arquitectura moderna dividida en dos grandes capas técnicas:
 1. **Consumo de API:** Utiliza la librería **Retrofit 2** combinada con el conversor **Gson** para procesar de forma asríncronica la respuesta del servidor en segundo plano (`enqueue`).
