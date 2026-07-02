@@ -104,8 +104,19 @@ fun PantallaListadoProductos(productos: List<Product>) {
                         Text(text = "Precio: ${item.currency} ${item.price}", fontSize = 14.sp)
                     }
                 }
+                }
             }
         }
     }
-}
+
+    fun obtenerListadoProductos(productos: List<Product>): String{
+        return if (productos.isNotEmpty()) {
+            productos.joinToString(separator = "\n") { producto ->
+                "ID: ${producto.id}, Nombre: ${producto.name}"
+            }
+        } else {
+            "No hay productos disponibles"
+        }
+    }
+
 }

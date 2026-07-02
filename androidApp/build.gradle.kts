@@ -12,10 +12,12 @@ kotlin {
     }
 }
 dependencies {
+    implementation(libs.junit.junit)
     implementation(projects.shared)
 
     implementation(libs.androidx.activity.compose)
 
+    testImplementation(libs.junit)
     implementation(libs.compose.uiToolingPreview)
     debugImplementation(libs.compose.uiTooling)
 
@@ -24,6 +26,9 @@ dependencies {
 
     implementation("androidx.compose.material3:material3:1.2.1")
     implementation("androidx.compose.foundation:foundation:1.6.7")
+
+    testImplementation("org.robolectric:robolectric:4.16")
+    androidTestImplementation("androidx.test.ext:junir:1.1.5")
 }
 
 android {
