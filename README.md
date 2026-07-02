@@ -1,31 +1,25 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# api3-mobile-testing-ecommerce
 
-* [/iosApp](./iosApp/iosApp) contains an iOS application. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+# Actividad Práctica Integradora - Mobile Testing
 
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-    folder is the appropriate location.
-
-### Running the apps
-
-Use the run configurations provided by the run widget in your IDE's toolbar. You can also use these commands and options:
-
-- Android app: `./gradlew :androidApp:assembleDebug`
-- iOS app: open the [/iosApp](./iosApp) directory in Xcode and run it from there.
-
-### Running tests
-
-Use the run button in your IDE's editor gutter, or run tests using Gradle tasks:
-
-- Android tests: `./gradlew :shared:testAndroidHostTest`
-- iOS tests: `./gradlew :shared:iosSimulatorArm64Test`
+* **Estudiante:** Florencia Buonincontro
+* **Materia:** Mobile Testing
+* **Año:** 2026
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## Descripción del proyecto
+Este repositorio contiene el desarrollo de una aplicación móvil nativa para Android construida con **Kotlin Multiplataform**. El objetivo principal es dar solución a la feature requerida por el equipo de e-commerce: conectarse de forma eficiente a una API externa, recuperar el catálogo de productos en formato JSON y renderizar la información limpia y sencilla para el usuario final.
+
+La aplicación implementa una arquitectura moderna dividida en dos grandes capas técnicas:
+1. **Consumo de API:** Utiliza la librería **Retrofit 2** combinada con el conversor **Gson** para procesar de forma asríncronica la respuesta del servidor en segundo plano (`enqueue`).
+2. **Interfaz de Usuario (Frontend):** Diseñado de forma declarativa con **Jetpack Compose (Material Design 3)**, empleando contenedores optimizados de memoria (`LazyColumn`) para el renderizado eficiente de listas scroleables.
+
+---
+
+## Especificaciones Técnicas
+
+* **Lenguaje principal:** Kotlin 
+* **Framework de IU:** Jetpack Compose (Material 3)
+* **Cliente de Red:** Retrofit 2 + Gson Converter
+* **Entorno de pruebas:** Emulador Pixel 8 (Android API 35)
